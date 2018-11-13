@@ -102,12 +102,16 @@ class Routes
             if ($this->Local[0] != '404') {
                 $this->File = 'home';
                 $this->Link = (isset($this->Local[0]) ? $this->Local : null);
-            }// else {
-            //     $this->File = 'error/404';
-            //     $this->Link = null;
-            // }
+            } else {
+                $this->File = 'error/404';
+                $this->Link = null;
+            }
             
+        } 
+        
+        if ($this->Local[0] == 'dashboard' && !isset($this->Local[1])) {
+            $this->File = 'dashboard/dashboard';
+            $this->Link = (isset($this->Local[0]) ? $this->Local : null);
         }
-       
     }
 }
