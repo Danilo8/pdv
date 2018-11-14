@@ -1,7 +1,7 @@
 <?php
 
 define('REQ', "app" . DIRECTORY_SEPARATOR);
-define('URL', 'localhost/pvd');
+define('URL', 'http://localhost/pdv');
 
 require_once (dirname(__FILE__) . DIRECTORY_SEPARATOR . 'autoload.php');
 

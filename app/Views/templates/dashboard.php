@@ -32,14 +32,18 @@
         <span></span>
         <ul class="navbar-nav ml-5 pl-5">                   
             <li class="nav-item active">
-                <?php if (condition) { ?>
-                    <a href="<?=URL?>/dashboard" class="nav-link">Painel Inicial</a>
+                <?php if ($route->File == "dashboard/dashboard") { ?>
+                    <a href="" class="nav-link">Painel Inicial 1</a>
                 <?php } else { ?>
-                    # code...
+                    <a href="<?=URL?>/dashboard" class="nav-link">Painel Inicial 2</a>
                 <?php } ?>                            
             </li>            
             <li class="nav-item active">
-                <a href="dashboard/vendas" class="nav-link">Vendas</a>           
+                <?php if ($route->File == "vendas") { ?>
+                    <a href="" class="nav-link">Painel Inicial 1</a>
+                <?php } else { ?>
+                    <a href="<?=URL?>/dashboard" class="nav-link">Painel Inicial 2</a>
+                <?php } ?>           
             </li>            
             <li class="nav-item active">
                 <a href="<?=URL?>/" class="nav-link">Cadastros</a>           

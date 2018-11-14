@@ -1,3 +1,6 @@
+<?php
+    use app\Controllers\CompaniesController;
+?>
 <!doctype html>
 <html lang="pt-BR">
     <head>
@@ -10,11 +13,18 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     </head>
     <style>
-        body{background:url('http://<?=URL?>/public/img/bg/bg-login.jpg')no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
+        body{background:url('<?=URL?>/public/img/bg/')no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
     </style>
     <body>
         
+        <?php include 'templates/navbar.php' ?>
 
+        <div class="n-responsive">
+            
+        </div>
+        <div class="responsive">
+        
+        </div>        
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
